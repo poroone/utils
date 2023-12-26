@@ -9,9 +9,10 @@ export default {
      * 
      * @param {*} name 命名空间
      */
-    setNamespace(name,) {
+    setNamespace(name) {
         this.namespace = name
-        return this.namespace
+     
+        return this
     },
     /**
      * 
@@ -23,7 +24,7 @@ export default {
         if (!oldName || !newName) return new Error("参数错误")
         const oldLocal = this.getStorage(oldName)
         const newLocal = this.getStorage(newName)
-        const obj = Object.assign(newLocal, oldLocal)
+        const obj = Object.assign(newLocal, oldLocal) 
         return window.localStorage.setItem(newName, JSON.stringify(obj))
     },
     /**
