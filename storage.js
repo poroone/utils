@@ -11,8 +11,7 @@ export default {
      */
     setNamespace(name) {
         this.namespace = name
-     
-        return this
+        return this 
     },
     /**
      * 
