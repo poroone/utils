@@ -1,0 +1,11 @@
+localstorage简单封装  
+
+包含API
+  namespace 返回当前命名空间名字
+  setNamespace(name)  重新开一个命名空间  返回当前实例
+   copyNamespace(oldName, newName)   将后者命名空间合并到前者命名空间
+  setItem(key, value) 在当前命名空间下存储
+  getItem(key) 获取当前命名空间的key的value
+  getStorage(name) 获取 指定命名空间下全部的值 或者当前命名空间全部的值
+   clearItem(key) 
+  clearAll
